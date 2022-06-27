@@ -1,0 +1,31 @@
+.item {
+    padding: 10px;
+    border: 1px solid black;
+}
+/* выравниваю весь контент страницы по центру */
+.navigation {
+    display: grid;
+    justify-items: center;
+}
+.wrapper {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "sidebar content"
+        "footer footer";
+    grid-template-columns: 324px 1fr;
+    grid-template-rows: 200px 1fr 169px;
+   max-width: 960px;
+}
+.header {
+    grid-area: header;
+}
+.sidebar {
+    grid-area: sidebar;
+}
+.content {
+    grid-area: content;
+}
+.footer {
+    grid-area: footer;
+}
