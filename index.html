@@ -13,60 +13,78 @@
         <h1>Новости</h1>
     </header>
     <section class="news">
-        <article>
-            <a href="#">
-                <h2>Первая новость</h2>
-            </a>
-            <div class="article-meta">Опубликовал <a href="#">Василий Пупкин</a> 27 Июня 2022
-            </div>
-            <img src="/images/img1.webp">
-            <p>Интересная новость</p>
-        </article>
-        <article>
-            <a href="#">
-                <h2>Вторая новость</h2>
-            </a>
-            <div class="article-meta">Опубликовал <a href="#">Николая Мудревский</a> 27 Июня 2022
-            </div>
-            <img src="/images/img2.webp">
-            <p>Новость лучшая</p>
-        </article>
-        <article>
-            <a href="#">
-                <h2>Третья новость</h2>
-            </a>
-            <div class="article-meta">Опубликовал <a href="#">Василий Столыпин</a> 27 Июня 2022
-            </div>
-            <img src="/images/img3.webp">
-            <p>Новость просто бомба</p>
-        </article>
-        <article>
-            <a href="#">
-                <h2>Четвертая новость</h2>
-            </a>
-            <div class="article-meta">Опубликовал <a href="#">Николай Саморядов</a> 27 Июня 2022
-            </div>
-            <img src="/images/img4.webp">
-            <p>Краткое описание новости</p>
-        </article>
-        <article>
-            <a href="#">
-                <h2>Пятая новость</h2>
-            </a>
-            <div class="article-meta">Опубликовал <a href="#">Василий Петров</a> 27 Июня 2022
-            </div>
-            <img src="/images/img5.webp">
-            <p>Новость про Новости</p>
-        </article>
-        <article>
-            <a href="#">
-                <h2>Шестая новость</h2>
-            </a>
-            <div class="article-meta">Опубликовал <a href="#">Ольга Залушта</a> 27 Июня 2020
-            </div>
-            <img src="/images/news6.png">
-            <p>Как всегда старая новость</p>
-        </article>
+<!-- Для работы с псевдоклассами и псевдоэлемментами (по заданию) делаем список и в него вставляем статьи -->
+        <ul>
+            <li>
+                <article>
+<!-- в первой и второй статьях заголовку H2 присваиваем класс NEW, чтобы (для выполнения задания) через псевдоэлемент добавить к заголовку контент NEW   -->
+                    <a href="#">
+                        <h2  class="NEW">Первая новость</h2>
+                    </a>
+                    <div class="article-meta">Опубликовал <a href="#">Василий Пупкин</a> 27 Июня 2022
+                    </div>
+                    <img src="/images/img1.webp">
+                    <p>Интересная новость</p>
+                </article>
+            </li>
+<!-- делаем 6 статей, меняем тест и картинки -->
+            <li>
+                <article>
+                    <a href="#">
+                        <h2 class="NEW">Вторая новость</h2>
+                    </a>
+                    <div class="article-meta">Опубликовал <a href="#">Николая Мудревский</a> 27 Июня 2022
+                    </div>
+                    <img src="/images/img2.webp">
+                    <p>Новость лучшая</p>
+                </article>
+               
+            </li>
+            <li>
+                <article>
+                    <a href="#">
+                        <h2>Третья новость</h2>
+                    </a>
+                    <div class="article-meta">Опубликовал <a href="#">Василий Столыпин</a> 27 Июня 2022
+                    </div>
+                    <img src="/images/img3.webp">
+                    <p>Новость просто бомба</p>
+                </article>
+            </li>
+            <li>
+                <article>
+                    <a href="#">
+                        <h2>Четвертая новость</h2>
+                    </a>
+                    <div class="article-meta">Опубликовал <a href="#">Николай Саморядов</a> 27 Июня 2022
+                    </div>
+                    <img src="/images/img4.webp">
+                    <p>Краткое описание новости</p>
+                </article>
+            </li>
+            <li>
+                <article>
+                    <a href="#">
+                        <h2>Пятая новость</h2>
+                    </a>
+                    <div class="article-meta">Опубликовал <a href="#">Василий Петров</a> 27 Июня 2022
+                    </div>
+                    <img src="/images/img5.webp">
+                    <p>Новость про Новости</p>
+                </article>
+            </li>
+            <li>
+                <article>
+                    <a href="#">
+                        <h2>Шестая новость</h2>
+                    </a>
+                    <div class="article-meta">Опубликовала <a href="#">Ольга Залушта</a> 27 Июня 2020
+                    </div>
+                    <img src="/images/news6.png">
+                    <p>Как всегда старая новость</p>
+                </article>
+            </li>
+        </ul>
     </section>
     <footer>
         <div class="links">

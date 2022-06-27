@@ -1,6 +1,6 @@
+/* переписываем все со страницы задания... кроме нормализации страницы, т.к. используем специальный файл для этого*/
 header {
     height: 400px;
-    /* background-color: blanchedalmond; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,4 +62,16 @@ article img {
     width: 100%;
     height: 300px;
     object-fit: cover;
+}
+/* убираем кружки списка (нумерация) */
+ul {
+    list-style-type: none;
+}
+/* красим каждой второй новости фон */
+.news ul li:nth-child(even) {
+    background-color: aqua;
+} 
+/* добавляем заголовкам в 1 и 2 статьях контент */
+.NEW::after {
+    content: " NEW";
 }
