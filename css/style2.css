@@ -1,12 +1,13 @@
 .item {
     padding: 10px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 /* выравниваю весь контент страницы по центру */
 .navigation {
     display: grid;
     justify-items: center;
 }
+/* делаю разметку страницы гридом. задаю области. устанавливаю максимальную ширину контента страницы */
 .wrapper {
     display: grid;
     grid-template-areas: 
@@ -17,15 +18,147 @@
     grid-template-rows: 200px 1fr 169px;
    max-width: 960px;
 }
+/* определяю область. задаю цвет фона блока */
 .header {
     grid-area: header;
+    background-image: url(/images/forheader.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+/* определяю область. задаю цвет фона блока */
 .sidebar {
     grid-area: sidebar;
+    background-color: #0380b6;
 }
+/* определяю область. задаю цвет фона блока контента */
 .content {
     grid-area: content;
+    background-color: #51d745;
 }
+/* определяю область. задаю цвет фона блока */
 .footer {
     grid-area: footer;
+    background-color: #f010f4;
+}
+/* выравниваю заголовки по центру */
+h1, h2, h3 {
+    text-align: center;
+}
+/* устанавливаю размер  */
+h3 {
+    font-size: 20px;
+}
+h1 {
+    text-transform: uppercase;
+    font-size: 100px;
+    height: 115px;
+    color: aliceblue;
+    margin-top: 0px;
+}
+h2 {
+    font-size: 50px;
+    height: 57px;
+    margin-top: -80px;
+}
+/* стилизую текст новостей */
+p {
+    text-align: justify;
+    margin-left: 33px;
+    margin-right: 33px;
+}
+/* стилизация новостей */
+.news {
+    background-color: white;
+    margin: 22px 26px 27px;
+    padding-bottom: 34px;
+    border-radius: 20px;
+}
+/* стилизую картинки в новостях */
+.news img {
+    width: 396px;
+    height: 165px;
+    border-radius: 20px;
+    margin-top: 13px;
+    margin-left: 85px;
+}
+/* стилизация заголовков в новостях */
+.news h3 {
+   max-width: 431px;
+   margin-left: 75px;
+}
+/* убираю подчеркивание в ссылках в баре и подвавле */
+a {
+    text-decoration: none;
+}
+/* убираю кружки списка в ссылках в баре и подвавле */
+ul {
+    list-style-type: none;
+}
+/* создаю флекс-стили и и в баре отступаю от верха для списка */
+.about {
+    display: flex;
+   flex-direction: column;
+   margin-top: 80px;
+}
+/* делаю отступ сверху и размер шрифтов в ссылках */
+.about li {
+    margin-bottom: 150px;
+    font-size: 50px;
+}
+/* задаю стили при наведении на ссылку*/
+.about li a:link, .about li a:visited {
+    background-color: red;
+    color: white;
+}
+.about li a:hover {
+    background-color: white;
+    color: red;
+}
+/* стизую  ссылку при активнности этой старицы*/
+#main:link, #main:visited {
+    background-color: white;
+    color: black;
+}
+/* стилизую каждый элемент списка отдельно */
+.about .one a {
+    padding: 38px 40px 38px 35px;
+    margin-left: -25px;
+    border-radius: 20px;
+}
+.about .two a {
+    padding: 38px 20px 38px 20px;
+    margin-left: -25px;
+    border-radius: 20px;
+}
+.about .three a {
+    padding: 38px 40px 38px 30px;
+    margin-left: -25px;
+    border-radius: 20px;
+}
+.about .four a {
+    justify-items: center;
+    padding: 38px 66px 38px 50px;
+    margin-left: -25px;
+    border-radius: 20px;
+    text-align: left;
+}
+/* оформляю подвал, все просто */
+.footer {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+.footer .links {
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+.footer .links > a {
+    padding: 0 50px;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+}
+.copyright {
+    font-size: 20px;
 }
