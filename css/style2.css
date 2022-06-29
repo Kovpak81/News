@@ -1,5 +1,5 @@
 .item {
-    padding: 10px;
+    /* padding: 0px; */
     /* border: 1px solid black; */
 }
 /* выравниваю весь контент страницы по центру */
@@ -51,20 +51,17 @@ h3 {
 h1 {
     text-transform: uppercase;
     font-size: 100px;
-    height: 115px;
     color: aliceblue;
-    margin-top: 0px;
+    margin-top: 20px;
 }
 h2 {
     font-size: 50px;
-    height: 57px;
     margin-top: -80px;
 }
 /* стилизую текст новостей */
 p {
     text-align: justify;
-    margin-left: 33px;
-    margin-right: 33px;
+    margin: 0 33px;
 }
 /* стилизация новостей */
 .news {
@@ -78,8 +75,7 @@ p {
     width: 396px;
     height: 165px;
     border-radius: 20px;
-    margin-top: 13px;
-    margin-left: 85px;
+    margin: 13px 0 0 85px;
 }
 /* стилизация заголовков в новостях */
 .news h3 {
@@ -90,15 +86,16 @@ p {
 a {
     text-decoration: none;
 }
-/* убираю кружки списка в ссылках в баре и подвавле */
+/* убираю кружки списка в ссылках в баре и подвавле (как понял убирание кружков в баре дало отступ слева, убираю его*/
 ul {
     list-style-type: none;
+    margin-left: -30px;
 }
-/* создаю флекс-стили и и в баре отступаю от верха для списка */
+/* создаю флекс-стили и в баре отступаю от верха для списка */
 .about {
     display: flex;
-   flex-direction: column;
-   margin-top: 80px;
+    flex-direction: column;
+    margin-top: 80px;
 }
 /* делаю отступ сверху и размер шрифтов в ссылках */
 .about li {
@@ -122,23 +119,23 @@ ul {
 /* стилизую каждый элемент списка отдельно */
 .about .one a {
     padding: 38px 40px 38px 35px;
-    margin-left: -25px;
+    margin-left: 15px;
     border-radius: 20px;
 }
 .about .two a {
-    padding: 38px 20px 38px 20px;
-    margin-left: -25px;
+    padding: 38px 20px;
+    margin-left: 15px;
     border-radius: 20px;
 }
 .about .three a {
     padding: 38px 40px 38px 30px;
-    margin-left: -25px;
+    margin-left: 15px;
     border-radius: 20px;
 }
 .about .four a {
     justify-items: center;
     padding: 38px 66px 38px 50px;
-    margin-left: -25px;
+    margin-left: 15px;
     border-radius: 20px;
     text-align: left;
 }
